@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> <title>IT WORLD | Home</title>
+</head>
+
+<body class="bg-zinc-950 text-gray-200 font-sans selection:bg-amber-500 selection:text-black">
+
+    <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-blue-400">
+                IT <span class="text-white">WORLD</span>
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium items-center">
+                <li><a href="./index.html" class="text-blue-400 transition-colors">Home</a></li>
+                <li><a href="./about.html" class="hover:text-amber-500 transition-colors">About</a></li>
+                <li><a href="./cars.html" class="hover:text-amber-500 transition-colors">Cars</a></li>
+                <li><a href="#" class="bg-blue-400 text-black px-4 py-2 rounded-lg hover:bg-blue-100 transition-all font-bold">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-blue-400 text-black py-2 overflow-hidden">
+            <div class="whitespace-nowrap animate-marquee font-bold uppercase text-sm tracking-widest">
+                Latest Updates: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia numquam tempore, ratione quibusdam laboriosam. &nbsp;&nbsp; • &nbsp;&nbsp; Latest Updates: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+
+        <section class="relative pt-20 pb-32">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                        Innovating the <span class="text-blue-400">Digital</span> Future.
+                    </h1>
+                    <p class="text-gray-400 text-lg mb-8 max-w-lg">
+                        We provide cutting-edge IT solutions to help your business scale in the modern era. Experience technology like never before.
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-zinc-200 transition-all">Get Started</button>
+                        <button class="border border-zinc-700 px-8 py-3 rounded-full font-bold hover:bg-zinc-800 transition-all">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-300 to-yellow-500 rounded-2xl blur opacity-35 group-hover:opacity-100 transition duration-1000"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-zinc-800">
+                        <img alt="Hero Image" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" src="./img/thumnail3.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-500 text-sm">
+                &copy; 2024 <span class="text-blue-400 font-bold">IT WORLD</span>. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-gray-400 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            animation: marquee 25s linear infinite;
+        }
+    </style>
+</body>
+
+</html>

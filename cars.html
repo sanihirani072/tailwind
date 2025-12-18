@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>IT WORLD | Cars & Tech</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-reveal {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-marquee {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+    </style>
+</head>
+
+<body class="bg-zinc-950 text-gray-200 font-sans selection:bg-blue-400 selection:text-black">
+
+    <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-blue-400">
+                IT <span class="text-white">WORLD</span>
+            </div>
+            <ul class="hidden md:flex gap-8 font-medium items-center">
+                <li><a href="./index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="./about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+                <li><a href="./cars.html" class="text-blue-400 border-b-2 border-blue-400">Cars</a></li>
+                <li><a href="#" class="bg-blue-400 text-black px-4 py-2 rounded-lg hover:bg-blue-100 transition-all font-bold">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-blue-400 text-black py-2 overflow-hidden">
+            <div class="whitespace-nowrap animate-marquee font-bold uppercase text-sm tracking-widest">
+                FEATURING: TESLA MODEL S PLAID &nbsp;&nbsp; • &nbsp;&nbsp; RIMAC NEVERA &nbsp;&nbsp; • &nbsp;&nbsp; PORSCHE TAYCAN TURBO S &nbsp;&nbsp; • &nbsp;&nbsp; LUCID AIR SAPPHIRE &nbsp;&nbsp; • &nbsp;&nbsp;
+            </div>
+        </div>
+
+        <section class="pt-16 pb-12 px-6 text-center">
+            <h1 class="text-5xl lg:text-8xl font-black text-white mb-4 animate-reveal">
+                The <span class="text-blue-400 italic">Evolution</span> of Speed.
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto animate-reveal" style="animation-delay: 0.2s;">
+                Exploring the intersection of high-performance automotive engineering and next-generation AI technology.
+            </p>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <div class="mb-10 flex items-center justify-between">
+                <h2 class="text-3xl font-bold border-l-4 border-blue-400 pl-4 text-white">Video Showcase</h2>
+                <span class="text-blue-400 font-mono text-sm">4K ULTRA HD</span>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 group relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/m7atGkba-Z8?autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="flex flex-col gap-6">
+                    <div class="group relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video hover:border-blue-400 transition-all duration-500">
+                        <iframe class="w-full h-full" src="https://youtu.be/SqN1kiRdodk?si=SAYtXH5BX1qxpKyT" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video hover:border-blue-400 transition-all duration-500">
+                        <iframe class="w-full h-full" src="https://youtu.be/g6ssjKDvVqA?si=fphtry4bvjNcVqRj" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <div class="mb-10">
+                <h2 class="text-3xl font-bold border-l-4 border-blue-400 pl-4 text-white">Gallery</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" alt="Porsche" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">Porsche 911 GT3</h3>
+                        <p class="text-sm text-gray-300">Aerodynamics perfected for the track.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&q=80&w=800" alt="Supercar" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">Rimac Concept Two</h3>
+                        <p class="text-sm text-gray-300">The peak of electric propulsion.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=800" alt="Lambo" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">Lamborghini Huracán</h3>
+                        <p class="text-sm text-gray-300">V10 raw power and futuristic design.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&q=80&w=800" alt="Cyber" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">Tesla Roadster</h3>
+                        <p class="text-sm text-gray-300">Reimagining the future of EV.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&q=80&w=800" alt="Classic" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">McLaren 720S</h3>
+                        <p class="text-sm text-gray-300">Lightweight carbon fiber engineering.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&q=80&w=800" alt="Red" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold text-blue-400">Ferrari SF90</h3>
+                        <p class="text-sm text-gray-300">Hybrid tech meets Italian soul.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-500 text-sm">
+                &copy; 2024 <span class="text-blue-400 font-bold">IT WORLD</span>. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-gray-400 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>IT WORLD | About Us</title>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(96, 165, 250, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(96, 165, 250, 0.6); }
+        }
+
+        .animate-fade-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-slide-left { animation: slideInLeft 0.8s ease-out forwards; }
+        .glow-effect { animation: glow 3s infinite; }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        
+        /* Hide scrollbar for aesthetics */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+    </style>
+</head>
+
+<body class="bg-zinc-950 text-gray-200 font-sans selection:bg-blue-400 selection:text-black">
+
+    <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-blue-400">
+                IT <span class="text-white">WORLD</span>
+            </div>
+
+            <ul class="hidden md:flex gap-8 font-medium items-center">
+                <li><a href="./index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="./about.html" class="text-blue-400 transition-colors">About</a></li>
+                <li><a href="./cars.html" class="hover:text-blue-400 transition-colors">Cars</a></li>
+                <li><a href="#" class="bg-blue-400 text-black px-4 py-2 rounded-lg hover:bg-white transition-all font-bold">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative pt-24 pb-20 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h1 class="text-6xl md:text-8xl font-black text-white mb-6 animate-fade-up">
+                    Driven by <span class="text-blue-400">Code</span>,<br>Defined by <span class="text-amber-500">Speed</span>.
+                </h1>
+                <p class="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl animate-fade-up delay-1">
+                    At IT WORLD, we don't just build software; we engineer the digital nervous system of the modern automotive industry. 
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-zinc-900/30">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative group animate-slide-left">
+                    <div class="absolute -inset-2 bg-blue-500/20 rounded-2xl blur-xl group-hover:bg-blue-500/40 transition duration-700"></div>
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1000" 
+                         alt="Luxury Car Tech" 
+                         class="relative rounded-2xl border border-zinc-700 glow-effect">
+                </div>
+                
+                <div class="animate-fade-up delay-2">
+                    <h2 class="text-3xl font-bold text-white mb-6">Redefining the Road</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Founded in 2024, <span class="text-blue-400">IT WORLD</span> began with a simple vision: to bridge the gap between high-performance automotive engineering and cutting-edge software solutions. 
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        From autonomous driving algorithms to AI-powered diagnostics, our team is dedicated to making cars smarter, safer, and more connected than ever before.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-blue-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white">500+</h3>
+                            <p class="text-sm text-gray-500 uppercase tracking-widest">AI Deployments</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-blue-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white">99.9%</h3>
+                            <p class="text-sm text-gray-500 uppercase tracking-widest">System Uptime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-white">Our Core Pillars</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-3xl bg-zinc-900 border border-zinc-800 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-blue-400/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Innovation</h3>
+                        <p class="text-gray-500">Pushing the boundaries of what's possible in vehicle-to-everything (V2X) communication.</p>
+                    </div>
+
+                    <div class="p-8 rounded-3xl bg-zinc-900 border border-zinc-800 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Safety First</h3>
+                        <p class="text-gray-500">Our IT solutions prioritize the security and safety of drivers above all else.</p>
+                    </div>
+
+                    <div class="p-8 rounded-3xl bg-zinc-900 border border-zinc-800 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-blue-400/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Global Reach</h3>
+                        <p class="text-gray-500">Powering automotive interfaces and cloud systems across six continents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="showroom" class="max-w-7xl mx-auto px-6 py-20 opacity-0 transition-all duration-1000 translate-y-20 flex flex-col items-center">
+    
+    <div class="mb-12 text-center">
+        <h2 class="text-6xl md:text-8xl font-black text-white mb-4 tracking-tighter">
+            THE <span class="text-blue-500">AVENTADOR</span>
+        </h2>
+        <p class="text-gray-400 text-xl font-medium tracking-wide">THE APEX OF ITALIAN PERFORMANCE</p>
+    </div>
+
+    <div class="parallax-card group relative h-[650px] w-full max-w-5xl" style="perspective: 2500px;">
+        <div class="card-body relative h-full w-full rounded-[60px] bg-[#0a0a0a] border border-white/10 shadow-[0_50px_100px_-20px_rgba(0,0,0,1)] overflow-hidden [transform-style:preserve-3d] transition-all duration-150 ease-out">
+            
+            <div class="shine-effect absolute inset-0 opacity-0 group-hover:opacity-60 pointer-events-none z-10"></div>
+
+            <div class="relative h-full p-12 md:p-16 flex flex-col justify-between z-20">
+                
+                <div class="[transform:translateZ(100px)] pointer-events-none">
+                    <span class="inline-block bg-blue-600 text-white px-5 py-2 rounded-xl text-[10px] font-black tracking-[0.2em] uppercase mb-4 shadow-xl shadow-blue-600/20">
+                        V12 ENGINE • 770 HP
+                    </span>
+                    <h3 class="text-6xl md:text-8xl font-black text-white/10 italic tracking-tighter uppercase leading-none">
+                        ULTIMAE
+                    </h3>
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-visible">
+                    <div class="relative w-[110%] md:w-[100%] [transform:translateZ(200px)] mt-10">
+                        <img src="https://www.pngall.com/wp-content/uploads/11/Tesla-Model-S-PNG-Image.png" 
+                             alt="Aventador" 
+                             class="car-img w-full drop-shadow-[0_30px_30px_rgba(0,0,0,0.7)] transition-transform duration-700 ease-out group-hover:scale-105">
+                        
+                        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[85%] h-12 bg-black/80 blur-2xl rounded-[100%] -z-10 group-hover:opacity-60 transition-opacity duration-500"></div>
+                        
+                        <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-blue-500/10 blur-[100px] rounded-full -z-20 group-hover:bg-blue-500/25 transition-all duration-500"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 [transform:translateZ(150px)]">
+                    <button class="px-12 bg-blue-600 text-white font-black py-5 rounded-2xl hover:bg-white hover:text-black transition-all duration-300 shadow-2xl shadow-blue-900/40 uppercase tracking-widest text-sm">
+                        Configure Exterior
+                    </button>
+                    <button class="px-12 border border-white/10 text-white font-black py-5 rounded-2xl hover:bg-white/5 transition-all duration-300 uppercase tracking-widest text-sm backdrop-blur-md">
+                        Full Specifications
+                    </button>
+                </div>
+            </div>
+
+            <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Entry Animation
+    const showroom = document.querySelector('#showroom');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
+        });
+    }, { threshold: 0.1 });
+    observer.observe(showroom);
+
+    // 3D Parallax Logic
+    const card = document.querySelector('.parallax-card');
+    const body = card.querySelector('.card-body');
+    const shine = card.querySelector('.shine-effect');
+    const imgContainer = card.querySelector('.car-img').parentElement;
+
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        // Rotation (Limited to keep car inside the frame)
+        const rotateX = (y - centerY) / 15;
+        const rotateY = (centerX - x) / 15;
+
+        body.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        
+        // Parallax Movement (Car moves slightly with mouse)
+        const moveX = (x - centerX) / 25;
+        const moveY = (y - centerY) / 25;
+        imgContainer.style.transform = `translateX(${moveX}px) translateY(${moveY}px) translateZ(120px)`;
+        
+        // Lighting
+        const lightX = (x / rect.width) * 100;
+        const lightY = (y / rect.height) * 100;
+        shine.style.background = `radial-gradient(circle at ${lightX}% ${lightY}%, rgba(59, 130, 246, 0.3) 0%, transparent 70%)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        body.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        body.style.transition = "all 0.6s cubic-bezier(0.23, 1, 0.32, 1)";
+        imgContainer.style.transform = `translateX(0px) translateY(0px) translateZ(0px)`;
+        shine.style.background = `none`;
+    });
+
+    card.addEventListener('mouseenter', () => {
+        body.style.transition = "none";
+    });
+</script>
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-black py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-500 text-sm">
+                &copy; 2024 <span class="text-blue-400 font-bold">IT WORLD</span>. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-gray-400 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
